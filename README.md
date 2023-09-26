@@ -1,6 +1,6 @@
 # Sandwich Maker ![license](https://img.shields.io/badge/License-MIT-green.svg?label=license)
 
-A sandwich making machine to perform V2/V3 and multi-meat sandwich attacks written using Rust and Huff.
+A sandwich-making machine to perform Uniswap V2/V3 sandwich attacks written using Rust and Huff.
 
 ## Brief Explanation
 Anytime that a transaction interacts with a Uniswap V2/V3 pool and its forks, there is some slippage introduced (routers, aggregators, other MEV bots). Sandwich bots, like this one, are a toxic form of MEV as they profit off this slippage by frontrunning the transaction pushing the price of an asset up to the slippage limit, and then immediately selling the asset through a backrun transaction.
@@ -17,9 +17,6 @@ Anytime that a transaction interacts with a Uniswap V2/V3 pool and its forks, th
 - **Local Simulations**: Fast concurrent EVM simulations to find sandwich opportunities.
 - **Token Dust**: Stores dust at the end of every bundle for lower gas usage the next time the token is traded.
 - **Salmonella Checks**: Detect if ERC20's transfer function uses any unusual opcodes that may produce different mainnet results.
-
-## Notice
-If any bugs or optimizations are found, feel free to create a pull request. **All pull requests are welcome!**
 
 > **Warning**
 >
