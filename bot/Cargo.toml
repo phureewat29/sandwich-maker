@@ -1,6 +1,0 @@
-[workspace]
-members = [
-  "crates/artemis-core",
-  "crates/strategy",
-  "sandwich-bin",
-]
