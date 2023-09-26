@@ -27,5 +27,6 @@ If any bugs or optimizations are found, feel free to create a pull request. **Al
 
 ## Acknowledgments
 - [artemis](https://github.com/paradigmxyz/artemis)
-- [huff-language](https://github.com/huff-language/huff-rs)
 - [foundry](https://github.com/foundry-rs/foundry)
+- [huff-language](https://github.com/huff-language/huff-rs)
+- [rusty-sando](https://github.com/mouseless-eth/rusty-sando)

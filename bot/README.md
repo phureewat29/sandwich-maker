@@ -1,4 +1,4 @@
-# Sandwich Maker/Bot ![license](https://img.shields.io/badge/License-MIT-green.svg?label=license)
+# Sandwich Maker Bot ![license](https://img.shields.io/badge/License-MIT-green.svg?label=license)
 
 Bot logic relies heavily on REVM simulations to detect sandwichable transactions. The simulations are done by injecting a modified router contract called [`LilRouter.sol`](https://github.com/phureewat29/sandwich-maker/blob/master/contract/src/LilRouter.sol) into a new EVM instance. Once injected, a concurrent binary search is performed to find an optimal input amount that results in the highest revenue. After sandwich calculations, the bot performs a [salmonella](https://github.com/Defi-Cartel/salmonella) check. If the sandwich is salmonella free, the bot then calculates gas bribes and sends the bundle to the fb relay.
 

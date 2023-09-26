@@ -1,4 +1,4 @@
-# Sandwich Maker/Contract ![license](https://img.shields.io/badge/License-MIT-green.svg?label=license)
+# Sandwich Maker Contract ![license](https://img.shields.io/badge/License-MIT-green.svg?label=license)
 
 Gas-optimized sandwich contract written in Huff to make use of unconventional gas optimizations.
 
@@ -43,7 +43,7 @@ When dealing with the other token amount, the values can range significantly dep
 
 We use byte shifts instead of bitshifts because we perform a byteshift by storing the 4bytes in memory N bytes to the left of its memory slot.
 
-To optimize further, instead of encoding the byteshift into our calldata, we encode the offset in memory such that when the 4bytes are stored, it will be N bytes from the left of its storage slot. [more details](https://github.com/phureewat29/sandwich-maker/blob/3b17b30340f6ef3558be5e505e55a1eb2fe8ca36/contract/test/misc/SandwichCommon.sol#L11).
+To optimize further, instead of encoding the byteshift into our calldata, we encode the offset in memory such that when the 4bytes are stored, it will be N bytes from the left of its storage slot.
 
 ### Hardcoded values
 Weth address is hardcoded into the contract and there are individual methods to handle when Weth is token0 or token1.
