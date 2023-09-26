@@ -4,7 +4,6 @@ pragma solidity ^0.8.15;
 import "./GeneralHelper.sol";
 
 /// @title FiveByteUtils
-/// @author phureewat29
 /// @notice Holds data and functions related to five byte encoding
 /// @dev This is a lossy encoding system however the wei lost in encoding is minamal and can be ignored
 /// @dev Encoding schema: fits any uint256 (32 byte value) into 5 bytes. 4 bytes reserved for a value, 1 byte reserved for storage slot to store the 4 byte value in.
@@ -74,7 +73,6 @@ library FiveBytesEncodingUtils {
 }
 
 /// @title WethEncodingUtils
-/// @author phureewat29
 /// @notice Holds data and functions related to encoding weth for use in `tx.value`
 /// @dev lossy encoding but it is okay to leave a small amount of wei in pool contract
 library WethEncodingUtils {
@@ -101,7 +99,6 @@ library WethEncodingUtils {
 }
 
 /// @title SandwichCommon
-/// @author phureewat29
 /// @notice Holds common methods between v2 and v3 sandwichs
 library SandwichCommon {
     /**

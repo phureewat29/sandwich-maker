@@ -1,0 +1,37 @@
+[package]
+edition = "2021"
+name = "strategy"
+version = "0.1.0"
+
+[dependencies]
+# Misc
+anyhow = "1.0.70"
+async-trait = "0.1.64"
+dashmap = "5.4.0"
+futures = "0.3.5"
+hashbrown = "0.14.0"
+serde = "1.0.145"
+thiserror = "1.0.37"
+tokio = {version = "1.29.0", features = ["full"]}
+
+# EVM based crates
+anvil = {git = "https://github.com/phureewat29/foundry.git", branch = "ethers-version-change"}
+cfmms = {git = "https://github.com/phureewat29/cfmms-rs.git", branch = "fix-serialize-dex-fee"}
+eth-encode-packed = "0.1.0"
+ethers = {version = "2.0.7", features = ["abigen", "ws"]}
+ethers-flashbots = {git = "https://github.com/onbjerg/ethers-flashbots"}
+foundry-evm = {git = "https://github.com/phureewat29/foundry.git", branch = "ethers-version-change"}
+
+# Logging
+colored = "2.0.0"
+indicatif = "0.17.5"
+log = "0.4.17"
+
+# Artemis
+artemis-core = {path = "../artemis-core"}
+
+[dev-dependencies]
+fern = {version = "0.6.2", features = ["colored"]}
+
+[features]
+debug = []

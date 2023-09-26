@@ -13,7 +13,6 @@ import "solmate/tokens/WETH.sol";
 import "../src/LilRouter.sol";
 
 /// @title LilRouterTest
-/// @author phureewat29
 /// @notice Test suite for the LilRouter contract
 contract LilRouterTest is Test {
     address constant weth = 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;

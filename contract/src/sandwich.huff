@@ -1,6 +1,5 @@
-/// @title  Sandwich
+/// @title  SandwichMaker
 /// @notice SPDX-License-Identifier: MIT
-/// @author phureewat29 <https://github.com/phureewat29>
 /// @notice gas optimized sandwich contract.
 
 // +-------------------------------------------+

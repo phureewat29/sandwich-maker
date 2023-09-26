@@ -5,7 +5,6 @@ import "./GeneralHelper.sol";
 import "./SandwichCommon.sol";
 
 /// @title V2SandwichUtility
-/// @author phureewat29
 /// @notice Functions for interacting with sandwich contract's v2 methods
 library V2SandwichUtility {
     /**

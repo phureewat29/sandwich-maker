@@ -6,7 +6,6 @@ import "./SandwichCommon.sol";
 import "v3-core/interfaces/IUniswapV3Pool.sol";
 
 /// @title V3SandwichUtility
-/// @author phureewat29
 /// @notice Functions for interacting with sandwich contract's v3 methdos
 library V3SandwichUtility {
     /**

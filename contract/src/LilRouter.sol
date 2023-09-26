@@ -7,7 +7,6 @@ import "v3-core/interfaces/IUniswapV3Pool.sol";
 import "solmate/tokens/ERC20.sol";
 
 /// @title LilRouter
-/// @author phureewat29
 /// @notice Minimal swap router used to sim V2/V3 swaps (and account for taxed tokens)
 contract LilRouter {
     /**
