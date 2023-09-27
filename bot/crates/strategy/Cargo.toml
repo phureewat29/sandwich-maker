@@ -15,12 +15,12 @@ thiserror = "1.0.37"
 tokio = {version = "1.29.0", features = ["full"]}
 
 # EVM based crates
-anvil = {git = "https://github.com/phureewat29/foundry.git", branch = "ethers-version-change"}
-cfmms = {git = "https://github.com/phureewat29/cfmms-rs.git", branch = "fix-serialize-dex-fee"}
+anvil = {git = "https://github.com/mouseless-eth/foundry.git", branch = "ethers-version-change"}
+cfmms = {git = "https://github.com/mouseless-eth/cfmms-rs.git", branch = "fix-serialize-dex-fee"}
 eth-encode-packed = "0.1.0"
 ethers = {version = "2.0.7", features = ["abigen", "ws"]}
 ethers-flashbots = {git = "https://github.com/onbjerg/ethers-flashbots"}
-foundry-evm = {git = "https://github.com/phureewat29/foundry.git", branch = "ethers-version-change"}
+foundry-evm = {git = "https://github.com/mouseless-eth/foundry.git", branch = "ethers-version-change"}
 
 # Logging
 colored = "2.0.0"

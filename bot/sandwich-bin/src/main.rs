@@ -10,7 +10,7 @@ use artemis_core::{
 use ethers::providers::{Provider, Ws};
 use log::info;
 use reqwest::Url;
-use rusty_sandwich::{
+use sandwich_maker::{
     config::Config,
     initialization::{print_banner, setup_logger},
 };
