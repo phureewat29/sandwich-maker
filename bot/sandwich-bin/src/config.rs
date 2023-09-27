@@ -14,7 +14,6 @@ pub struct Config {
     pub sandwich_address: Address,
     pub bundle_signer: LocalWallet,
     pub wss_rpc: Url,
-    pub discord_webhook: String,
 }
 
 impl Config {
@@ -45,15 +44,12 @@ impl Config {
             .parse()
             .map_err(|_| anyhow!("Failed to parse \"WSS_RPC\""))?;
 
-        let discord_webhook = get_env("DISCORD_WEBHOOK")?;
-
         Ok(Self {
             searcher_signer,
             sandwich_inception_block,
             sandwich_address,
             bundle_signer,
             wss_rpc,
-            discord_webhook,
         })
     }
 }
