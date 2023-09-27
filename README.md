@@ -3,7 +3,7 @@
 A sandwich-making machine to perform Uniswap V2/V3 sandwich attacks written using Rust and Huff.
 
 ## Brief Explanation
-Anytime that a transaction interacts with a Uniswap V2/V3 pool and its forks, there is some slippage introduced (routers, aggregators, other MEV bots). Sandwich bots, like this one, are a toxic form of MEV as they profit off this slippage by frontrunning the transaction pushing the price of an asset up to the slippage limit, and then immediately selling the asset through a backrun transaction.
+Anytime that a transaction interacts with a Uniswap V2/V3 pool and its forks, there is some slippage introduced (routers, aggregators, other MEV bots). Bot will profit off this slippage by frontrunning the transaction pushing the price of an asset up to the slippage limit, and then immediately selling the asset through a backrun transaction.
 
 **Bot Logic Breakdown** can be found under [bot/README.md](https://github.com/phureewat29/sandwich-maker/tree/master/bot)
 
