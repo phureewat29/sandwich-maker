@@ -1,5 +1,4 @@
 bot/target
-bot/Cargo.lock
 contract/out
 contract/cache
 .env
