@@ -4,7 +4,7 @@ license = "MIT"
 name = "sandwich-maker"
 readme = "README.md"
 repository = "https://github.com/phureewat29/sandwich-maker"
-version = "0.1.1"
+version = "0.1.2"
 
 [dependencies]
 anyhow = "1.0.71"
