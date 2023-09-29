@@ -13,9 +13,8 @@ Anytime that a transaction interacts with a Uniswap V2/V3 pool and its forks, th
 - **Fully Generalized**: Sandwich any tx that introduces slippage.
 - **V2 and V3 Logic**: Logic to handle Uniswap V2/V3 pools.
 - **Multi-Meat**: Build and send multi-meat sandwiches.
-- **Gas Optimized**: Contract written in Huff using unconventional gas optimizations.
+- **Gas Optimized**: Contract written in Huff for gas optimizations.
 - **Local Simulations**: Fast concurrent EVM simulations to find sandwich opportunities.
-- **Token Dust**: Stores dust at the end of every bundle for lower gas usage the next time the token is traded.
 - **Salmonella Checks**: Detect if ERC20's transfer function uses any unusual opcodes that may produce different mainnet results.
 
 > **Warning**
