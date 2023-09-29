@@ -5,12 +5,7 @@ use indoc::indoc;
 use log::LevelFilter;
 
 pub fn print_banner() {
-    let banner = indoc! {
-r#"
-======================
-    SANDWICH MAKER
-======================
-"#};
+    let banner = indoc! {r#"BAKING A SANDWICH !!!"#};
 
     log::info!("{}", format!("{}", banner.green().bold()));
 }

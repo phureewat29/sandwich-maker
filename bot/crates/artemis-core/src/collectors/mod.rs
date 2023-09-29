@@ -7,3 +7,6 @@ pub mod block_collector;
 
 /// This collector listens to a stream of new pending transactions.
 pub mod mempool_collector;
+
+/// This collector listens to a stream of mev-share events.
+pub mod mevshare_collector;

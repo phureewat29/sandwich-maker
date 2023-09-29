@@ -21,6 +21,7 @@ eth-encode-packed = "0.1.0"
 ethers = {version = "2.0.7", features = ["abigen", "ws"]}
 ethers-flashbots = {git = "https://github.com/onbjerg/ethers-flashbots"}
 foundry-evm = {git = "https://github.com/mouseless-eth/foundry.git", branch = "ethers-version-change"}
+mev-share-sse = {git = "https://github.com/mattsse/mev-share-rs"}
 
 # Logging
 colored = "2.0.0"

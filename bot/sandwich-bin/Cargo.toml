@@ -20,7 +20,7 @@ thiserror = "1.0.37"
 tokio = {version = "1.29.0", features = ["full"]}
 url = "2.3.1"
 
-# EVM based crates
+# EVM
 cfmms = "0.6.2"
 ethers = {version = "2.0.7", features = ["abigen", "ws"]}
 ethers-flashbots = {git = "https://github.com/onbjerg/ethers-flashbots"}
@@ -32,6 +32,9 @@ colored = "2.0.0"
 fern = {version = "0.6.2", features = ["colored"]}
 indoc = "2"
 
-# artemis related
+# artemis
 artemis-core = {path = "../crates/artemis-core"}
 strategy = {path = "../crates/strategy"}
+
+# mev-share
+mev-share-sse = {git = "https://github.com/mattsse/mev-share-rs"}

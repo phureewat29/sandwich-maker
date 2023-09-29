@@ -2,7 +2,10 @@ use std::sync::Arc;
 
 use anyhow::Result;
 use artemis_core::{
-    collectors::{block_collector::BlockCollector, mempool_collector::MempoolCollector},
+    collectors::{
+        block_collector::BlockCollector, mempool_collector::MempoolCollector,
+        mevshare_collector::MevShareCollector,
+    },
     engine::Engine,
     executors::flashbots_executor::FlashbotsExecutor,
     types::{CollectorMap, ExecutorMap},
@@ -46,6 +49,12 @@ async fn main() -> Result<()> {
     let mempool_collector = Box::new(MempoolCollector::new(provider.clone()));
     let mempool_collector = CollectorMap::new(mempool_collector, Event::NewTransaction);
     engine.add_collector(Box::new(mempool_collector));
+
+    let mev_share_sse_url = "https://mev-share.flashbots.net/".to_string();
+    let mev_share_collector = Box::new(MevShareCollector::new(mev_share_sse_url));
+    let mev_share_collector =
+        CollectorMap::new(mev_share_collector, |e| Event::MevShareCollector(e));
+    engine.add_collector(Box::new(mev_share_collector));
 
     // Setup strategy
     let configs = StratConfig {
