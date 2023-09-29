@@ -24,6 +24,7 @@ use crate::helpers::sign_eip1559;
 pub enum Event {
     NewBlock(NewBlock),
     NewTransaction(Transaction),
+    MevShareCollector(mev_share_sse::Event),
 }
 
 /// Core Action enum for current strategy
