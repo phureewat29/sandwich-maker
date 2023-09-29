@@ -4,3 +4,4 @@ members = [
   "crates/strategy",
   "sandwich-bin",
 ]
+resolver = "2"
