@@ -22,7 +22,7 @@ interface IUSDT {
 /// @notice Test suite for the huff sandwich maker contract
 contract SandwichTest is Test {
     // wallet associated with private key 0x1
-    address constant searcher = 0x7E5F4552091A69125d5DfCb7b8C2659029395Bdf;
+    address constant searcher = 0x0000000000000000000000000000000000000000;
     WETH weth = WETH(payable(0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2));
     uint256 wethFundAmount = 100 ether;
     address sandwichMaker;

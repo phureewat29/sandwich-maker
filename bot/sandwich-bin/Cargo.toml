@@ -1,9 +1,5 @@
 [package]
-authors = ["phureewat29 <https://github.com/phureewat29>"]
-description = "MEV sandwich bot written using Rust and Huff"
 edition = "2021"
-homepage = "https://github.com/phureewat29/sandwich-maker"
-keywords = ["Ethereum", "Mev", "Dex", "Sandwich"]
 license = "MIT"
 name = "sandwich-maker"
 readme = "README.md"
